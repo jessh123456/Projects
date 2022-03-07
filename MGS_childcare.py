@@ -16,7 +16,7 @@ def integer_checker(question1):
 
 
 choice = 0
-students = ["gilbert", "bob", "ana"]
+students = ["Gilbert", "Bob", "Ana"]
 name = ""
 remove_name = ""
 repeat = 1
@@ -50,11 +50,10 @@ while choice != 5:
                 "like to check out? \n:")
             if remove_name not in students:
                 print("Sorry, this child does not seem to exist in our records"
-                      " please try again.")
+                      " please try again.").title()
             elif remove_name in students:
                 removed_student = students.index(remove_name)
                 students.pop(removed_student)
-                print(students)
                 repeat = 0
                 print(f"Thankyou! {remove_name} has been checked out!")
     elif choice == 3:
